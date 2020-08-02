@@ -29,10 +29,10 @@
 
     var timeline =[];
 
-    timeline.push({
-      type: 'fullscreen',
-      fullscreen_mode: true
-    });
+//     timeline.push({
+//       type: 'fullscreen',
+//       fullscreen_mode: true
+//     });
 
     var welcome = {
       type: "html-keyboard-response",
@@ -46,38 +46,11 @@
       '<p><h1><strong>PARTICIPANT INFORMATION STATEMENT</strong></h1></p><p></p>'+
       '<div align=left>'+
       '<p><strong>Project Title: </strong>Executive Functions and Reasoning</p>' +
-      '<p><strong>Project Summary:</strong><br />You are invited to participate in an online study conducted by  under the supervision of Tijl Grootswagers and Manuel Varlet from the MARCS Institute for Brain, Behaviour and Development. This research investigates how the brain processes visual stimuli.</p>' +
-      '<p><strong>How is the study being paid for?</strong><br />The research is supported by the MARCS institute for Brain, Behaviour & Development, Western Sydney University.</p>' +
-      '<p><strong>What will I be asked to do?</strong><br />During this online experiment, sequences of objects will be presented on your computer screen and your task will be to respond via your keyboard to specific stimuli in the sequences and/or questions about the stimuli. The experiment will last about min and requires access to the Internet and a laptop or desktop computer with a keyboard (no smartphone or tablet).</p>' +
-      '<p><strong>How much of my time will I need to give?</strong><br />The total experiment will take roughly minutes.</p>' +
-      '<p><strong>What benefits will I, and/or the broader community, receive for participating?</strong><br />You will have the opportunity to learn more about how scientific research is conducted, and also about the specific topic under investigation: Visual perception. You will receive 1 credit per 10 minutes through SONA.</p>' +
-      '<p><strong>Will the study involve any risk or discomfort for me? If so, what will be done to rectify it?</strong><br />There are no risks associated with this experiment.This study should not cause you any discomfort. However, should you experience any discomfort, you may discontinue participation at any time by closing your Internet browser.</p>' +
-      '<p><strong>How do you intend to publish or disseminate the results?</strong><br />It is anticipated that the results of this research project will be published and/or presented in a variety of forums. In any publication and/or presentation, information will be provided in such a way that the participant cannot be identified.</p>' +
-      "<p><strong>Will the data and information that I have provided be disposed of?</strong><br />No. Your data will be used as per Western Sydney University's Open Access Policy. This means that data collected from this study can be made available online and world-wide in perpetuity.</p>" +
-      '<p><strong>Can I withdraw from the study?</strong><br />Participation is entirely voluntary and you are not obliged to be involved. If you do participate you can withdraw by closing your Internet browser at any time without giving reason. If you do choose to withdraw, any information that you have supplied will be withdrawn from the database.</p>' +
-      "<p><strong>Can I tell other people about the study?</strong><br />Yes, you can tell other people about the study by providing them with the Chief Investigator's contact details. They can contact the Chief Investigator to discuss their participation in the research project and obtain a copy of the information sheet.</p>" +
-      '<p><strong>What if I require further information?</strong><br />Please contact Oviya Mohan , Dr Tijl Grootswagers (T.Grootswagers@westernsydney.edu.au) or Dr Manuel Varlet (m.varlet@westernsydney.edu.au) if further information is required.</p>' +
-      '<p><strong>What if I have a complaint?</strong><br />If you have any complaints Tel +61247360229 or email humanethics@westernsydney.edu.au<br />Any issues you raise will be treated in confidence and investigated fully, and you will be informed of the outcome.<br />If you agree to participate in this study, you may be asked to sign the Participant Consent Form.<br /></p>' +
       '</div><p></p>'+
-      '<p><h1><strong>CONSENT FORM</strong></h1></p><p></p>' +
-      '<div align=left>' +
-      '<p>This study has been approved by the Human Research Ethics Committee at Western Sydney University. The ethics reference number is: H13092</p>' +
-      '<p><strong>I hereby consent to participate in the above named research project.</strong></p>' +
-      '<p><strong>I acknowledge that:</strong></p>' +
-      '<p>- I have read the online participant information sheet.</p>' +
-      '<p>- The procedures required for the project and the time involved have been clearly explained.</p>' +
-      '<p><strong>I consent to:</strong></p>' +
-      '<p>- The recording of my responses.</p>' +
-      '<p><strong> Data publication, reuse and storage</strong></p>' +
-      '<p>This project seeks consent for the data provided to be used in any other projects in the future.</p>' +
-      "<p>To make reuse of the data possible it will be stored under Western Sydney University's Open Access Policy.</p>" +
-      '<p>I understand that in relation to publication of the data <strong>my involvement is confidential and the information gained during the study may be published but no information about me will be used in any way that reveals my identity.</strong></p>' +
-      '<p>- The researchers intend to make the non-identified data from this project available for other research projects.</p>' +
-      '<p><strong>- I can withdraw from the study at any time without affecting my relationship with the researcher/s, and any organisations involved, now or in the future.</strong></p>' +
-      '</div><p></p>',
-      choices: ['I CONSENT TO PARTICIPATE IN THIS STUDY'],
-      prompt: "<p><small>Click this button to continue, or press ESC to exit.</small></p><p></p>",
-      data: {stimulus: 'consentform'}
+      '<p><h1><strong>CONSENT FORM</strong></h1></p><p></p>', 
+       choices: ['I CONSENT TO PARTICIPATE IN THIS STUDY'],
+       prompt: "<p><small>Click this button to continue, or press ESC to exit.</small></p><p></p>",
+       data: {stimulus: 'consentform'}
     };
     timeline.push(consentform)
 
@@ -196,10 +169,10 @@
     };
     timeline.push(debrief_block);
 
-    timeline.push({
-      type: 'fullscreen',
-      fullscreen_mode: false
-    });
+//     timeline.push({
+//       type: 'fullscreen',
+//       fullscreen_mode: false
+//     });
 
     // function saveData(name, data){
     //   var xhr = new XMLHttpRequest();
